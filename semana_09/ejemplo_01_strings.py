@@ -1,0 +1,10 @@
+correo = "  ESTUDIANTE@EJEMPLO.COM  ".strip().lower()
+palabras = "Python es fácil de practicar".split()
+
+print(correo)
+print(correo.startswith("estudiante"))
+print(correo.endswith(".com"))
+print(correo.replace("ejemplo", "universidad"))
+print(correo.find("@"))
+print("-".join(palabras))
+print("2026".isdigit())
