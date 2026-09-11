@@ -1,5 +1,7 @@
 # Actividad 6: CRUD con SQLite
 
+**Semana:** 13 · **Ponderación:** 15%
+
 ## Consigna
 
 Cree un CRUD pequeño de tickets con Python y SQLite. Debe permitir crear, consultar, actualizar y eliminar registros.

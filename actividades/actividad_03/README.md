@@ -1,14 +1,17 @@
-# Actividad 3: control de productos
+# Actividad 3: colecciones y funciones
+
+**Semana:** 7 · **Ponderación:** 15%
 
 ## Consigna
 
-Cree un programa para registrar un producto, calcular su subtotal, impuesto y total.
+Cree un programa que trabaje con una colección de registros, por ejemplo estudiantes, productos o tickets. Debe permitir consultar o calcular información usando funciones.
 
 ## Instrucciones
 
-- Separe el programa en por lo menos dos archivos.
-- Use funciones con parámetros y valores de retorno.
-- El archivo principal debe importar el módulo de operaciones.
+- Use una lista, tupla o diccionario.
+- Defina funciones con parámetros y valores de retorno.
+- Recorra la colección y muestre un resultado claro.
+- Separe el programa en más de un archivo solamente si ayuda a explicarlo; no use clases.
 
 ## Entrega
 

@@ -1,17 +1,18 @@
-# Actividad 1: resultado académico
+# Actividad 1: análisis, algoritmo y pseudocódigo
+
+**Semana:** 2 · **Ponderación:** 10%
 
 ## Consigna
 
-Cree un programa que solicite el nombre, la nota y el porcentaje de asistencia de un estudiante. Muestre si aprobó, reprobó o necesita revisión.
-
-## Instrucciones
-
-- Use variables, entrada de datos, operadores y `if`, `elif`, `else`.
-- Valide que la nota y la asistencia estén entre 0 y 100.
-- No use listas ni funciones.
+Elabore el análisis y el algoritmo de un problema sencillo, por ejemplo determinar el resultado académico de un estudiante.
 
 ## Entrega
 
-Entregue un archivo `.py` que se pueda ejecutar desde la consola.
+- tabla de entrada, proceso y salida;
+- algoritmo escrito en lenguaje natural;
+- pseudocódigo;
+- dos pruebas manuales con datos diferentes.
+
+No entregue código Python. La solución debe ser comprensible para otra persona y usar únicamente los conceptos vistos hasta la semana 2.
 
 > El estudiante deberá estar preparado para explicar el funcionamiento del código desarrollado y realizar ajustes sencillos solicitados por el docente durante la revisión.

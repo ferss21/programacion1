@@ -1,5 +1,5 @@
-def calcular_promedio(nota_1, nota_2):
-    return (nota_1 + nota_2) / 2
+def calcular_promedio(notas):
+    return sum(notas) / len(notas)
 
 
 def aprobo(promedio):

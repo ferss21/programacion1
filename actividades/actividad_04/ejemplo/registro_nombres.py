@@ -5,6 +5,7 @@ ruta = Path(__file__).with_name("nombres.txt")
 
 
 def guardar_nombre(nombre):
+    nombre = nombre.strip()
     with open(ruta, "a", encoding="utf-8") as archivo:
         archivo.write(nombre + "\n")
 

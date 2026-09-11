@@ -1,5 +1,7 @@
 # Actividad 5: clase Ticket
 
+**Semana:** 11 · **Ponderación:** 10%
+
 ## Consigna
 
 Cree un programa con una clase `Ticket`. Cada ticket debe tener número, título, descripción, prioridad y estado.
