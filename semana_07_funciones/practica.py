@@ -1,3 +1,5 @@
+"""Genera una factura usando funciones pequeñas y reutilizables."""
+
 def pedir_producto():
     nombre = input("Producto: ")
     precio = float(input("Precio: "))
@@ -18,6 +20,13 @@ def mostrar_factura(nombre, subtotal, impuesto, total):
     print("Total:", round(total, 2))
 
 
+def calcular_descuento(subtotal, porcentaje):
+    return subtotal * porcentaje / 100
+
+
 producto, precio, cantidad = pedir_producto()
 subtotal, impuesto, total = calcular_total(precio, cantidad)
+descuento = calcular_descuento(subtotal, 5)
+total -= descuento
 mostrar_factura(producto, subtotal, impuesto, total)
+print("Descuento aplicado:", round(descuento, 2))

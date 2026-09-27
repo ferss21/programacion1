@@ -1,7 +1,10 @@
+"""Menú inicial para integrar las capas del sistema de tickets."""
+
 from database import crear_tabla
 
 
 def mostrar_menu():
+    """Muestra las operaciones que deberá conectar el estudiante."""
     print("\n===== SISTEMA DE TICKETS =====")
     print("1. Crear ticket")
     print("2. Mostrar tickets")
@@ -14,4 +17,4 @@ def mostrar_menu():
 
 crear_tabla()
 mostrar_menu()
-print("Complete las opciones como parte del proyecto final.")
+print("Conecte cada opción con la clase Ticket y la base de datos.")

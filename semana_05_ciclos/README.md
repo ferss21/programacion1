@@ -10,4 +10,9 @@ Repetir instrucciones y acumular resultados.
 
 ## Ejecutar y practicar
 
-Ejecutar los ejemplos con Python 3 y completar `practica.py`. La Actividad 2 evalúa decisiones y ciclos.
+Ejecutar los ejemplos con Python 3 y completar `practica.py`.
+
+## Actividades
+
+- [Actividad de clase](actividad_clase.md): resumen de notas.
+- [Tarea evaluada](tarea_evaluada.md): caja de compras.

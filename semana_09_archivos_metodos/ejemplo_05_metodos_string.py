@@ -1,3 +1,5 @@
+"""Normaliza texto y aplica métodos frecuentes de strings."""
+
 correo = "  ESTUDIANTE@EJEMPLO.COM  ".strip().lower()
 palabras = "Python es fácil de practicar".split()
 

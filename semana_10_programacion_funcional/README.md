@@ -11,3 +11,8 @@ Generadores, `yield` y decoradores.
 ## Ejecutar y practicar
 
 Ejecutar los ejemplos con Python 3 y completar `practica.py` cambiando la lista de notas.
+
+## Actividades
+
+- [Actividad de clase](actividad_clase.md): pipeline de reportes.
+- [Tarea evaluada](tarea_evaluada.md): reporte diferido y auditoría.

@@ -11,3 +11,8 @@ Guardar y recorrer varios datos relacionados.
 ## Ejecutar y practicar
 
 Ejecutar los ejemplos con Python 3 y completar `practica.py` con datos de prueba propios.
+
+## Actividades
+
+- [Actividad de clase](actividad_clase.md): registro de estudiantes.
+- [Tarea evaluada](tarea_evaluada.md): inventario en memoria.

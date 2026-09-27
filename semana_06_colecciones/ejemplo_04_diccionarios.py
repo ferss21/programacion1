@@ -1,3 +1,5 @@
+"""Actualiza y recorre los datos de un estudiante."""
+
 estudiante = {
     "nombre": "Ana",
     "carrera": "Sistemas",

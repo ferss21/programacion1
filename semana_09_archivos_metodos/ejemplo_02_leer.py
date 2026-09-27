@@ -1,3 +1,5 @@
+"""Lee un archivo completo y distingue si está vacío."""
+
 from pathlib import Path
 
 

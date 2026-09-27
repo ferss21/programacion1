@@ -1,3 +1,5 @@
+"""Escribe varias líneas usando un administrador de contexto."""
+
 from pathlib import Path
 
 

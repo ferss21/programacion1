@@ -1,4 +1,7 @@
+"""Menú que practica ciclos, contadores y acumuladores."""
+
 opcion = ""
+saludos = 0
 
 while opcion != "4":
     print("\n1. Saludar")
@@ -10,6 +13,7 @@ while opcion != "4":
     if opcion == "1":
         nombre = input("Nombre: ")
         print("Hola", nombre)
+        saludos += 1
     elif opcion == "2":
         for numero in range(1, 11):
             print(numero)
@@ -21,3 +25,5 @@ while opcion != "4":
         print("Hasta luego")
     else:
         print("Opción no válida")
+
+print("Saludos realizados:", saludos)

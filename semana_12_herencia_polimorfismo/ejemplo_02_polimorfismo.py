@@ -1,3 +1,5 @@
+"""Llama al mismo método sobre objetos de tipos diferentes."""
+
 class Usuario:
     def mostrar_tipo(self):
         print("Usuario")

@@ -10,4 +10,9 @@ Separar un problema en tareas pequeñas y reutilizables.
 
 ## Ejecutar y practicar
 
-Ejecutar los ejemplos con Python 3. La Actividad 3 integra colecciones y funciones.
+Ejecutar los ejemplos con Python 3 y revisar la separación entre funciones y datos.
+
+## Actividades
+
+- [Actividad de clase](actividad_clase.md): reporte de productos.
+- [Tarea evaluada](tarea_evaluada.md): gestor de calificaciones.

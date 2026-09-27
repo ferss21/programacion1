@@ -1,3 +1,5 @@
+"""Usa una tupla para representar datos que no deben cambiar."""
+
 dias_clase = ("lunes", "miércoles", "viernes")
 
 print("Primer día:", dias_clase[0])

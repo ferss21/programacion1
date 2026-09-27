@@ -1,3 +1,5 @@
+"""Administra una lista de productos y genera un pequeño reporte."""
+
 productos = ["cuaderno", "lápiz", "regla"]
 productos.append("borrador")
 productos[1] = "bolígrafo"
@@ -12,4 +14,5 @@ else:
     print("Producto no encontrado")
 
 productos.remove("regla")
+print("Productos restantes:", len(productos))
 print(productos)

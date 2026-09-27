@@ -1,3 +1,5 @@
+"""Agrega un registro delimitado al final de un archivo."""
+
 from pathlib import Path
 
 

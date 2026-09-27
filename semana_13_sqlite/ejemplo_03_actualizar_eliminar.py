@@ -1,3 +1,5 @@
+"""Actualiza y elimina un ticket usando consultas parametrizadas."""
+
 import sqlite3
 from pathlib import Path
 
@@ -22,9 +24,11 @@ cursor.execute(
     "UPDATE tickets SET estado = ? WHERE id = ?",
     (nuevo_estado, id_ticket)
 )
+print("Registros actualizados:", cursor.rowcount)
 
 if input("¿Desea eliminar este ticket? (s/n): ").lower() == "s":
     cursor.execute("DELETE FROM tickets WHERE id = ?", (id_ticket,))
+    print("Registros eliminados:", cursor.rowcount)
 
 conexion.commit()
 conexion.close()

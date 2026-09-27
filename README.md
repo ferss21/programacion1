@@ -29,21 +29,13 @@ Repositorio de la materia Programación I. El curso comienza con análisis de pr
 | 15 | Proyecto final |
 | 16 | Carga de notas |
 
-Las semanas 1, 2 y 14 se entregan por separado porque contienen material escrito de apoyo y no ejemplos de código. Este repositorio conserva las semanas con ejemplos y prácticas ejecutables. La semana 15 se trabaja con la guía de [proyecto_final](proyecto_final/README.md).
+Las semanas 1, 2 y 14 se entregan por separado porque contienen material escrito de apoyo y no ejemplos de código. Este repositorio conserva las carpetas de semanas que ya existen, sin agregar nuevas semanas. La integración del proyecto final se trabaja con la guía de [proyecto_final](proyecto_final/README.md).
 
-## Evaluaciones
+## Actividades y evaluaciones
 
-| Evaluación | Semana | Tema | Ponderación |
-|---|---:|---|---:|
-| Actividad 1 | 2 | Análisis de problemas, algoritmo y pseudocódigo | 10% |
-| Actividad 2 | 5 | Decisiones y ciclos | 15% |
-| Actividad 3 | 7 | Colecciones y funciones | 15% |
-| Actividad 4 | 9 | Módulos, archivos, métodos y evidencia básica en Git | 15% |
-| Actividad 5 | 11 | Clase `Ticket` y objetos | 10% |
-| Actividad 6 | 13 | CRUD con SQLite desde Python | 15% |
-| Proyecto final | 15 | Sistema de gestión de tickets | 20% |
+Cada carpeta de semana contiene un `actividad_clase.md` para trabajo guiado y un `tarea_evaluada.md` con consigna, entregables y rúbrica. La guía de [proyecto_final](proyecto_final/README.md) contiene el cierre integrador.
 
-Total: **100%**. Las demás prácticas son formativas y no tienen ponderación.
+La ponderación global se asigna según la planificación del curso; las rúbricas quedan documentadas junto a cada tarea para que la evaluación sea consistente.
 
 ## Git
 

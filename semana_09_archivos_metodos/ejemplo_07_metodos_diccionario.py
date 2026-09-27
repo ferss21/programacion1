@@ -1,3 +1,5 @@
+"""Actualiza un diccionario y consulta claves opcionales."""
+
 producto = {"nombre": "Teclado", "precio": 25.50, "cantidad": 4}
 
 print(producto.get("nombre"))

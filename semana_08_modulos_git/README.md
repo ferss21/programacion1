@@ -11,3 +11,8 @@ Separar código en módulos y registrar avances con el flujo básico de Git.
 ## Ejecutar y practicar
 
 Ejecutar `python main.py`. Practicar `git status`, `git add .`, `git commit`, `git push` y `git pull`.
+
+## Actividades
+
+- [Actividad de clase](actividad_clase.md): separar un programa en módulos.
+- [Tarea evaluada](tarea_evaluada.md): mini sistema modular con evidencia Git.

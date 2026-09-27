@@ -1,3 +1,5 @@
+"""Filtra tickets abiertos de manera diferida."""
+
 def tickets_abiertos(tickets):
     for ticket in tickets:
         if ticket["estado"] == "Abierto":
@@ -11,4 +13,4 @@ datos = [
 ]
 
 for ticket in tickets_abiertos(datos):
-    print(ticket["titulo"])
+    print(ticket["titulo"], "-", ticket["estado"])

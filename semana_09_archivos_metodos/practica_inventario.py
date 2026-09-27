@@ -1,3 +1,5 @@
+"""Administra un inventario en memoria antes de estudiar persistencia."""
+
 inventario = []
 opcion = ""
 
@@ -10,7 +12,13 @@ while opcion != "6":
         codigo = input("Código: ").strip().upper()
         nombre = input("Nombre: ").strip()
         precio = float(input("Precio: "))
-        inventario.append({"codigo": codigo, "nombre": nombre, "precio": precio})
+        cantidad = int(input("Cantidad: "))
+        inventario.append({
+            "codigo": codigo,
+            "nombre": nombre,
+            "precio": precio,
+            "cantidad": cantidad,
+        })
     elif opcion in ("2", "3", "4"):
         codigo = input("Código: ").strip().upper()
         encontrado = None
@@ -23,11 +31,15 @@ while opcion != "6":
         elif opcion == "2":
             print(encontrado)
         elif opcion == "3":
-            encontrado.update({"precio": float(input("Nuevo precio: "))})
+            encontrado.update({
+                "precio": float(input("Nuevo precio: ")),
+                "cantidad": int(input("Nueva cantidad: ")),
+            })
         else:
             inventario.remove(encontrado)
     elif opcion == "5":
         for producto in inventario:
-            print(producto)
+            total = producto["precio"] * producto["cantidad"]
+            print(producto, "- valor:", round(total, 2))
     elif opcion != "6":
         print("Opción no válida")

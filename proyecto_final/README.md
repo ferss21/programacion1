@@ -11,3 +11,8 @@ El programa debe mostrar de forma clara el uso de variables, condicionales, cicl
 La carpeta `ejemplo_estructura` muestra cómo separar las partes principales, pero no constituye una solución completa. Antes de la entrega se debe integrar y revisar el proyecto con la lista de requisitos anterior.
 
 > Durante la presentación, el estudiante deberá explicar el funcionamiento general del sistema, identificar las principales partes de su código y realizar cambios sencillos solicitados por el docente.
+
+## Actividades de la semana de integración
+
+- [Actividad de clase](actividad_clase.md): integrar el flujo de creación, consulta y actualización.
+- [Tarea evaluada](tarea_evaluada.md): entregar una versión funcional y documentada del sistema.

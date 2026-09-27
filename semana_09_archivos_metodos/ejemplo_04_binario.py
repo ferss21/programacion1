@@ -1,3 +1,5 @@
+"""Muestra la diferencia entre escribir texto y bytes."""
+
 from pathlib import Path
 
 

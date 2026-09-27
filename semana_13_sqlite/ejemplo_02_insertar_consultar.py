@@ -1,3 +1,5 @@
+"""Inserta varios tickets y consulta un subconjunto de columnas."""
+
 import sqlite3
 from pathlib import Path
 
@@ -15,14 +17,23 @@ cursor.execute("""
         estado TEXT
     )
 """)
-cursor.execute(
+datos = [
+    ("Problema de acceso", "No permite iniciar sesión", "Alta", "Abierto"),
+    ("Instalar programa", "Instalar editor", "Media", "En proceso"),
+]
+cursor.executemany(
     "INSERT INTO tickets (titulo, descripcion, prioridad, estado) VALUES (?, ?, ?, ?)",
-    ("Problema de acceso", "No permite iniciar sesión", "Alta", "Abierto")
+    datos,
 )
 conexion.commit()
 
 cursor.execute("SELECT id, titulo, prioridad, estado FROM tickets")
 for ticket in cursor.fetchall():
+    print(ticket)
+
+print("Abiertos:")
+for ticket in cursor.execute(
+        "SELECT id, titulo FROM tickets WHERE estado = ?", ("Abierto",)):
     print(ticket)
 
 conexion.close()

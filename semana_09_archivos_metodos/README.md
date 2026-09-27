@@ -10,4 +10,9 @@ Lectura y escritura de archivos, `with open`, persistencia sencilla y métodos d
 
 ## Ejecutar y practicar
 
-Ejecutar los ejemplos con Python 3. La Actividad 4 integra archivos, módulos, métodos y evidencia básica en Git.
+Ejecutar los ejemplos con Python 3 y comprobar que los datos sobreviven al cierre del programa.
+
+## Actividades
+
+- [Actividad de clase](actividad_clase.md): persistencia de tickets.
+- [Tarea evaluada](tarea_evaluada.md): registro persistente de tickets.

@@ -11,3 +11,8 @@ Herencia simple, `super()` y sobrescritura de métodos.
 ## Ejecutar y practicar
 
 Ejecutar los ejemplos con Python 3. Mantener las clases pequeñas y fáciles de explicar.
+
+## Actividades
+
+- [Actividad de clase](actividad_clase.md): tipos de atención.
+- [Tarea evaluada](tarea_evaluada.md): tickets especializados.

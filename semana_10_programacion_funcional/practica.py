@@ -1,22 +1,24 @@
+"""Combina un generador de notas con un decorador de reportes."""
+
 def anunciar(funcion):
-    def ejecutar():
+    def ejecutar(*args, **kwargs):
         print("--- Iniciando reporte ---")
-        funcion()
+        resultado = funcion(*args, **kwargs)
         print("--- Reporte terminado ---")
+        return resultado
     return ejecutar
 
 
-def notas_aprobadas(notas):
+def notas_aprobadas(notas, minimo=71):
     for nota in notas:
-        if nota >= 71:
+        if nota >= minimo:
             yield nota
 
 
 @anunciar
-def mostrar_reporte():
-    notas = [65, 82, 90, 70, 75]
-    for nota in notas_aprobadas(notas):
+def mostrar_reporte(notas):
+    for nota in notas_aprobadas(notas, minimo=71):
         print(nota)
 
 
-mostrar_reporte()
+mostrar_reporte([65, 82, 90, 70, 75])

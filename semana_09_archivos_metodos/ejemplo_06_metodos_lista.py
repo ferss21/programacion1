@@ -1,3 +1,5 @@
+"""Practica insertar, retirar, ordenar, contar y ordenar elementos."""
+
 notas = [80, 95, 80, 71]
 notas.append(88)
 notas.insert(1, 90)

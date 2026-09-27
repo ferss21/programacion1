@@ -1,3 +1,5 @@
+"""Crea el esquema inicial de tickets en una base SQLite."""
+
 import sqlite3
 from pathlib import Path
 
