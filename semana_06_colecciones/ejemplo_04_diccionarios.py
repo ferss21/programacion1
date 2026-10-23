@@ -1,16 +1,23 @@
 """Actualiza y recorre los datos de un estudiante."""
 
-estudiante = {
-    "nombre": "Ana",
-    "carrera": "Sistemas",
-    "nota": 88
-}
-
-print(estudiante["nombre"])
-estudiante["nota"] = 91
-estudiante["correo"] = "ana@ejemplo.com"
-
-for clave, valor in estudiante.items():
-    print(clave, ":", valor)
-
-del estudiante["correo"]
+estudiantes = [{
+    "nombre": "Ana1",
+    "carrera": "Sistemas1",
+    "nota": 881
+},{
+    "nombre": "Ana2",
+    "carrera": "Sistemas2",
+    "nota": 882
+},{
+    "nombre": "Ana3",
+    "carrera": "Sistemas3",
+    "nota": 883
+}]
+estudiantes.insert(len(estudiantes), {
+    "nombre": "Ana4",
+    "carrera": "Sistemas4",
+    "nota": 884
+});
+print(len(estudiantes))
+for valor in estudiantes:
+    print(valor["nombre"], valor["carrera"], valor["nota"])

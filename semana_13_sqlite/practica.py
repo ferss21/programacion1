@@ -1,20 +1,13 @@
-"""CRUD de tickets con SQLite, validaciones y funciones separadas."""
+"""CRUD de tickets con SQLite Cloud, validaciones y funciones separadas."""
 
-import sqlite3
-from pathlib import Path
+from conexion import abrir_conexion
 
-
-RUTA = Path(__file__).with_name("practica_tickets.db")
 ESTADOS = ("Abierto", "En proceso", "Cerrado")
 PRIORIDADES = ("Baja", "Media", "Alta")
 
 
-def conectar():
-    return sqlite3.connect(RUTA)
-
-
 def crear_tabla():
-    with conectar() as conexion:
+    with abrir_conexion() as conexion:
         conexion.execute("""
             CREATE TABLE IF NOT EXISTS tickets (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -38,7 +31,7 @@ def agregar():
     if not datos[0] or not datos[1] or datos[3] not in PRIORIDADES:
         print("Título, descripción y prioridad son obligatorios")
         return
-    with conectar() as conexion:
+    with abrir_conexion() as conexion:
         conexion.execute(
             """INSERT INTO tickets
             (titulo, descripcion, categoria, prioridad, estado)
@@ -49,7 +42,7 @@ def agregar():
 
 
 def mostrar():
-    with conectar() as conexion:
+    with abrir_conexion() as conexion:
         tickets = conexion.execute(
             """SELECT id, titulo, categoria, prioridad, estado
             FROM tickets ORDER BY id"""
@@ -62,7 +55,7 @@ def mostrar():
 
 def buscar():
     texto = input("Texto a buscar: ").strip()
-    with conectar() as conexion:
+    with abrir_conexion() as conexion:
         tickets = conexion.execute(
             """SELECT id, titulo, prioridad, estado FROM tickets
             WHERE titulo LIKE ? OR descripcion LIKE ?""",
@@ -81,7 +74,7 @@ def actualizar():
     if estado is None:
         print("Estado no válido")
         return
-    with conectar() as conexion:
+    with abrir_conexion() as conexion:
         resultado = conexion.execute(
             "UPDATE tickets SET estado = ? WHERE id = ?", (estado, id_ticket)
         )
@@ -90,7 +83,7 @@ def actualizar():
 
 def eliminar():
     id_ticket = int(input("Id: "))
-    with conectar() as conexion:
+    with abrir_conexion() as conexion:
         resultado = conexion.execute("DELETE FROM tickets WHERE id = ?", (id_ticket,))
         print("Registros eliminados:", resultado.rowcount)
 

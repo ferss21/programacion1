@@ -15,4 +15,5 @@ Ejecutar los ejemplos con Python 3 y completar la práctica de la clase `Ticket`
 ## Actividades
 
 - [Actividad de clase](actividad_clase.md): ciclo de vida de un ticket.
+- [Práctica guiada](practica_especial.py): control de equipos con objetos.
 - [Tarea evaluada](tarea_evaluada.md): clase `Ticket`.

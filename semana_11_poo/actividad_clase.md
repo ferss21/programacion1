@@ -1,5 +1,5 @@
 # Actividad de clase: ciclo de vida de un ticket
 
-Amplíe la clase `Ticket` para validar atributos básicos, mostrar un resumen y controlar los cambios entre `Abierto`, `En proceso` y `Cerrado`. Cree varios objetos y guárdelos en una lista para generar un resumen.
+El laboratorio necesita controlar equipos que se prestan a estudiantes. Modele cada equipo con código, descripción y estado, y permita consultar, prestar y devolver equipos desde un programa de consola.
 
-Discuta qué comportamiento pertenece al objeto y qué comportamiento pertenece al programa principal.
+La clase debe proteger sus cambios de estado y ofrecer un resumen legible. Cree varios objetos en una colección y muestre cuáles siguen prestados; discuta qué comportamiento corresponde a cada objeto y qué trabajo debe coordinar el programa principal. Consulte la [práctica guiada](practica_especial.py).

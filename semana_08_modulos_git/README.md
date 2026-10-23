@@ -15,4 +15,5 @@ Ejecutar `python main.py`. Practicar `git status`, `git add .`, `git commit`, `g
 ## Actividades
 
 - [Actividad de clase](actividad_clase.md): separar un programa en módulos.
+- [Práctica guiada](practica_especial.py): registro de solicitudes por módulos y Git.
 - [Tarea evaluada](tarea_evaluada.md): mini sistema modular con evidencia Git.

@@ -1,23 +1,18 @@
-"""Crea el esquema inicial de tickets en una base SQLite."""
+"""Crea la tabla tickets en la base remota de SQLite Cloud."""
 
-import sqlite3
-from pathlib import Path
+from conexion import abrir_conexion
 
 
-ruta = Path(__file__).with_name("tickets.db")
-conexion = sqlite3.connect(ruta)
-cursor = conexion.cursor()
+with abrir_conexion() as conexion:
+    conexion.execute("""
+        CREATE TABLE IF NOT EXISTS tickets (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            titulo TEXT NOT NULL,
+            descripcion TEXT,
+            categoria TEXT NOT NULL,
+            prioridad TEXT,
+            estado TEXT
+        )
+    """)
 
-cursor.execute("""
-    CREATE TABLE IF NOT EXISTS tickets (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        titulo TEXT NOT NULL,
-        descripcion TEXT,
-        prioridad TEXT,
-        estado TEXT
-    )
-""")
-
-conexion.commit()
-conexion.close()
-print("Tabla creada")
+print("Tabla creada en SQLite Cloud")

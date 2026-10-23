@@ -1,39 +1,37 @@
-"""Inserta varios tickets y consulta un subconjunto de columnas."""
+"""Inserta tickets y consulta los registros guardados en la nube."""
 
-import sqlite3
-from pathlib import Path
+from conexion import abrir_conexion
 
 
-ruta = Path(__file__).with_name("tickets.db")
-conexion = sqlite3.connect(ruta)
-cursor = conexion.cursor()
-
-cursor.execute("""
-    CREATE TABLE IF NOT EXISTS tickets (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        titulo TEXT NOT NULL,
-        descripcion TEXT,
-        prioridad TEXT,
-        estado TEXT
+with abrir_conexion() as conexion:
+    conexion.execute("""
+        CREATE TABLE IF NOT EXISTS tickets (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            titulo TEXT NOT NULL,
+            descripcion TEXT,
+            categoria TEXT NOT NULL,
+            prioridad TEXT,
+            estado TEXT
+        )
+    """)
+    datos = [
+        ("Problema de acceso", "No permite iniciar sesión", "Acceso", "Alta", "Abierto"),
+        ("Instalar programa", "Instalar editor", "Software", "Media", "En proceso"),
+    ]
+    conexion.executemany(
+        "INSERT INTO tickets (titulo, descripcion, categoria, prioridad, estado) VALUES (?, ?, ?, ?, ?)",
+        datos,
     )
-""")
-datos = [
-    ("Problema de acceso", "No permite iniciar sesión", "Alta", "Abierto"),
-    ("Instalar programa", "Instalar editor", "Media", "En proceso"),
-]
-cursor.executemany(
-    "INSERT INTO tickets (titulo, descripcion, prioridad, estado) VALUES (?, ?, ?, ?)",
-    datos,
-)
-conexion.commit()
+    tickets = conexion.execute(
+        "SELECT id, titulo, prioridad, estado FROM tickets"
+    ).fetchall()
+    abiertos = conexion.execute(
+        "SELECT id, titulo FROM tickets WHERE estado = ?", ("Abierto",)
+    ).fetchall()
 
-cursor.execute("SELECT id, titulo, prioridad, estado FROM tickets")
-for ticket in cursor.fetchall():
+for ticket in tickets:
     print(ticket)
 
 print("Abiertos:")
-for ticket in cursor.execute(
-        "SELECT id, titulo FROM tickets WHERE estado = ?", ("Abierto",)):
+for ticket in abiertos:
     print(ticket)
-
-conexion.close()

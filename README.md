@@ -1,6 +1,6 @@
 # Programación I
 
-Repositorio de la materia Programación I. El curso comienza con análisis de problemas y algoritmos; Python se introduce en la semana 3 y se aplica progresivamente hasta un sistema de gestión de tickets con SQLite.
+Repositorio de la materia Programación I. El curso comienza con análisis de problemas y algoritmos; Python se introduce en la semana 3 y se aplica progresivamente hasta un sistema de atención de solicitudes conectado a SQLite Cloud.
 
 ## Requisitos
 
@@ -24,7 +24,7 @@ Repositorio de la materia Programación I. El curso comienza con análisis de pr
 | 10 | Programación funcional introductoria |
 | 11 | Orientación a objetos |
 | 12 | Herencia y polimorfismo |
-| 13 | SQLite |
+| 13 | Bases de datos: SQLite Cloud |
 | 14 | Integración del proyecto final |
 | 15 | Proyecto final |
 | 16 | Carga de notas |

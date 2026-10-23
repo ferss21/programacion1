@@ -8,7 +8,7 @@ while True:
     if numero == 0:
         break
     if numero < 0:
-        print("Se omiten los números negativos")
+        print("Se omiten los nú6meros negativos")
         continue
     print("Ingresó:", numero)
     total += numero

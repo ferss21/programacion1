@@ -1,32 +1,37 @@
-"""Punto de partida para encapsular la persistencia del proyecto final."""
+"""Punto de partida para conectar el proyecto con SQLite Cloud."""
 
-import sqlite3
-from pathlib import Path
+import os
 
-
-RUTA_DB = Path(__file__).with_name("tickets.db")
+import sqlitecloud
 
 
 def conectar():
-    """Devuelve una conexión a la base local del proyecto."""
-    return sqlite3.connect(RUTA_DB)
+    """Abre una conexión usando SQLITECLOUD_URL del entorno."""
+    cadena = os.environ.get("SQLITECLOUD_URL")
+    if not cadena:
+        raise RuntimeError("Configure la variable de entorno SQLITECLOUD_URL")
+    return sqlitecloud.connect(cadena)
 
 
 def crear_tabla():
-    """Crea el esquema si todavía no existe."""
+    """Crea la tabla inicial; complete aquí el esquema acordado."""
     conexion = conectar()
-    conexion.execute("""
-        CREATE TABLE IF NOT EXISTS tickets (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            titulo TEXT NOT NULL,
-            descripcion TEXT,
-            categoria TEXT,
-            prioridad TEXT,
-            estado TEXT
-        )
-    """)
-    conexion.commit()
-    conexion.close()
+    try:
+        conexion.execute("""
+            CREATE TABLE IF NOT EXISTS solicitudes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                titulo TEXT NOT NULL,
+                descripcion TEXT NOT NULL,
+                categoria TEXT NOT NULL,
+                prioridad TEXT NOT NULL,
+                estado TEXT NOT NULL,
+                reportado_por TEXT NOT NULL
+            )
+        """)
+        conexion.commit()
+    finally:
+        conexion.close()
 
 
-# El estudiante debe completar aquí insertar, consultar, actualizar y eliminar.
+# Complete aquí las operaciones parametrizadas para crear, consultar,
+# actualizar y eliminar solicitudes.

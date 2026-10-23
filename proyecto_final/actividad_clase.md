@@ -1,5 +1,7 @@
-# Actividad de clase: integración por capas
+# Actividad de clase: integración del sistema
 
-Integre la clase `Ticket`, el módulo de base de datos y el menú principal. Primero conecte la creación y listado; después agregue búsqueda y actualización. Al final, pruebe cada opción con datos reales y registre los errores encontrados.
+Durante la integración, construya el sistema de solicitudes por partes. Empiece por el análisis y el menú de consola; conecte después las validaciones y las clases; por último, enlace las operaciones CRUD de SQLite Cloud y el reporte exportable.
 
-La actividad se centra en explicar cómo se comunican las partes del proyecto y en corregir problemas de integración.
+Trabaje con una lista breve de comprobación: crear y volver a encontrar una solicitud; rechazar datos inválidos; cambiar estado y prioridad; eliminar solo después de confirmar; filtrar el reporte; y abrir el archivo exportado. Al terminar cada etapa, haga un commit de Git con un mensaje que describa el avance.
+
+Use el [proyecto final](README.md) como especificación. En grupo, expliquen cómo se conectan el menú, los módulos, los objetos y la base de datos; registren los problemas encontrados y cómo los resolvieron.

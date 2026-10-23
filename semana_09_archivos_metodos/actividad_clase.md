@@ -1,5 +1,5 @@
 # Actividad de clase: persistencia de tickets
 
-Guarde tickets en un archivo de texto usando un formato delimitado. Implemente funciones para agregar, leer, convertir cada línea en un diccionario y mostrar solo los tickets de una prioridad seleccionada.
+Un grupo de soporte necesita conservar solicitudes entre ejecuciones. Construya un programa que permita registrar solicitudes en un archivo de texto, volver a leerlas al iniciar y consultar un reporte filtrado por prioridad.
 
-Use `with open`, `strip`, `split`, `join` y métodos de listas. Pruebe un archivo vacío y uno con varias líneas.
+Elija un formato sencillo para cada línea y conviértala a una estructura útil en el programa. Use `with open` y métodos de strings, listas y diccionarios; pruebe un archivo vacío y una búsqueda sin resultados. Continúe con la [práctica guiada](practica_especial.py).

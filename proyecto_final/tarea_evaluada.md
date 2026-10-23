@@ -1,14 +1,7 @@
-# Tarea evaluada: sistema de gestión de tickets
+# Tarea evaluada: sistema de atención de solicitudes
 
-Entregue el sistema completo de consola con creación, listado, búsqueda, actualización, cambio de estado y eliminación de tickets persistidos en SQLite.
+Entregue una aplicación de consola funcional que permita crear, listar, buscar, actualizar, cambiar de estado y eliminar solicitudes persistidas en una base SQLite Cloud. Incluya además un reporte filtrado que se exporte a un archivo de texto. La descripción completa de campos, operaciones y temas requeridos está en el [README del proyecto](README.md).
 
-Incluya:
+La entrega debe incluir el código organizado en módulos, un `requirements.txt`, instrucciones de instalación y configuración, el diseño de la tabla, casos de prueba y evidencia de una ejecución completa. Use `SQLITECLOUD_URL`; no incluya las credenciales en el repositorio. El equipo debe demostrar las operaciones principales y explicar cómo aplicó los contenidos del curso.
 
-- código organizado en módulos;
-- instrucciones de ejecución;
-- descripción del modelo de datos;
-- casos de prueba para cada operación;
-- evidencia de una ejecución completa;
-- explicación de las decisiones principales.
-
-Evaluación: funcionalidades 40% · integración y persistencia 25% · organización y documentación 20% · demostración y defensa 15%.
+**Evaluación:** funcionalidades y validación 25% · integración de contenidos y diseño 25% · base de datos y consultas seguras 20% · organización y documentación 15% · pruebas, demostración y defensa 15%.

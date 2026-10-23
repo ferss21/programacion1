@@ -15,4 +15,5 @@ Ejecutar los ejemplos con Python 3 y comprobar que los datos sobreviven al cierr
 ## Actividades
 
 - [Actividad de clase](actividad_clase.md): persistencia de tickets.
+- [Práctica guiada](practica_especial.py): solicitudes persistentes en un archivo.
 - [Tarea evaluada](tarea_evaluada.md): registro persistente de tickets.

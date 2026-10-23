@@ -3,7 +3,7 @@
 numero = int(input("Número entero: "))
 
 if numero > 0:
-    signo = "Positivo"
+signo = "Positivo"
 elif numero < 0:
     signo = "Negativo"
 else:

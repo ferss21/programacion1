@@ -15,4 +15,5 @@ Ejecutar los ejemplos con Python 3 y completar `practica.py` cambiando la lista 
 ## Actividades
 
 - [Actividad de clase](actividad_clase.md): pipeline de reportes.
+- [Práctica guiada](practica_especial.py): reporte filtrado con generadores y decorador.
 - [Tarea evaluada](tarea_evaluada.md): reporte diferido y auditoría.
