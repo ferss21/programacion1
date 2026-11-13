@@ -33,7 +33,7 @@ Las semanas 1, 2 y 14 se entregan por separado porque contienen material escrito
 
 ## Actividades y evaluaciones
 
-Cada carpeta de semana contiene un `actividad_clase.md` para trabajo guiado y un `tarea_evaluada.md` con consigna, entregables y rúbrica. La guía de [proyecto_final](proyecto_final/README.md) contiene el cierre integrador.
+Las carpetas de semana incluyen actividades de clase y un `tarea_evaluada.md` con consigna, entregables y rúbrica. En la semana 10, el trabajo de clase está organizado en [cinco actividades integradoras](semana_10_programacion_funcional/README.md), con la primera resuelta. La guía de [proyecto_final](proyecto_final/README.md) contiene el cierre integrador.
 
 La ponderación global se asigna según la planificación del curso; las rúbricas quedan documentadas junto a cada tarea para que la evaluación sea consistente.
 
